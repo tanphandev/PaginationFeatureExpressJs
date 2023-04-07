@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-async function createConnection() {
+async function createConnectDB() {
     try {
         mongoose.set('strictQuery', false)
         await mongoose.connect('mongodb://127.0.0.1/TestFeature')
@@ -8,4 +8,4 @@ async function createConnection() {
         console.log('connect database fail! error:', error)
     }
 }
-module.exports = { createConnection }
+module.exports = { createConnectDB }

@@ -1,6 +1,6 @@
-const signUpRouter = require('./Router/signUp.router')
+const accountRouter = require('./Router/account.router');
 function routes(app) {
-    app.use('/account', signUpRouter)
+    app.use('/account', accountRouter);
 }
 
-module.exports = { routes }
+module.exports = { routes };
